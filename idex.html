@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <div class="main">
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <table>
+                <tr>
+                    <td><label>First-Name</label></td>
+                    <td><input type="text" placeholder="Your Name" 
+                        required
+                        pattern="[a-z A-Z]{3,15}" 
+                        title="Follow" name="fname"></td>
+                </tr>
+                <tr>
+                    <td><label>Father Name</label></td>
+                    <td>
+                        <input type="text" placeholder="Father name"
+                        required pattern="[a-z A-Z]{3,15}" title="Follow"
+                        name="fatherName">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Mother Name</label></td>
+                    <td><input type="text"
+                        placeholder="Mother Name" required pattern="[a-z A-Z]{3,15}"
+                        name="motherName"></td>
+                </tr>
+                <tr>
+                    <td><label>Date of Birth</label></td>
+                    <td><input type="date" min="1980-01-01" 
+                        max="2000-01-01" name="date"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Phone number</label>
+                    </td>
+                    <td><input type="tel" placeholder="Enter your number" 
+                        name="pno"></td>
+                </tr>
+                <tr>
+                    <td><label>G-Mail</label></td>
+                    <td><input type="email" placeholder="Enter gmail"
+                        name="gm"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password</label>
+                        <td>
+                            <input type="password" name="pw">
+                        </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Re-Password</label>
+                        <td>
+                            <input type="password" name="pw1">
+                        </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><input type="radio" name="Gender" value="Male"> Male
+                    <input type="radio" name="Gender" value="Female"> Female
+                </td>
+                </tr>
+                <tr>
+                    <td><label>Select Your Country</label></td>
+                    <td>
+                        <select name="Country">
+                            <option value="India">India</option>
+                            <option value="America">America</option>
+                            <option value="Englade">Englade</option>
+                            <option value="Austrelia">Austrelia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Upload-Image</label></td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr><td><input type="reset"></td></tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Course Details</legend>
+                <table>
+                    <tr>
+                        <td><label>Select Course</label></td>
+                        <td>
+                            <select name="course">
+                                <option value="Java Full Stack">Java Full Stack</option>
+                                <option value="Python Full Stack">Python Full Stack</option>
+                                <option value="Data Bases">Data Bases</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Mode</label></td>
+                        <td><input type="checkbox" name="Online">Online
+                            <input type="checkbox" name="Online">Offline</td>
+                    </tr>
+                </table>
+            </fieldset>
+           <div id="button"> <button>Submit</button></div>
+        </form>
+    </div>
+    <script src="j.js"></script>
+</body>
+</html>
